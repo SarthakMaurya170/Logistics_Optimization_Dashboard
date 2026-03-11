@@ -7,6 +7,9 @@
 -- =========================================================================
 -- PART 1: DATABASE SCHEMA SETUP (Creating the Relational Database)
 -- =========================================================================
+CREATE DATABASE SUPPLYCHAIN;
+
+USE SUPPLYCHAIN;
 
 CREATE TABLE Warehouses (
     WarehouseID INT PRIMARY KEY,
@@ -94,4 +97,5 @@ JOIN
 JOIN 
     Products p ON sa.ProductID = p.ProductID
 ORDER BY 
+
     sa.Deficit DESC;
